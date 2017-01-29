@@ -1,0 +1,25 @@
+.forecast{
+  margin-top: 150px;
+}
+.forecast--container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.forecast--subheader{
+  font-size: 30px;
+  color: #333;
+  font-weight: 100px;
+}
+.forecast--header{
+  font-size: 65px;
+  color: #333;
+  font-weight: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30;
+}

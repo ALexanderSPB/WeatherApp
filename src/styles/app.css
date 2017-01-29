@@ -1,0 +1,18 @@
+button{
+  margin: 10px;
+}
+.App{
+  margin-top: 150px;
+  margin-left: 10%;
+  width: 100%;
+  display: inline-block;
+}
+.menu{
+  position: absolute;
+  width: 50px;
+  left: 65%;
+}
+
+.InputContainer{
+  margin-left: 30px;
+}

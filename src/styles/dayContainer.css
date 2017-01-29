@@ -1,0 +1,15 @@
+.dayContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:  column;
+    margin: 35;
+}
+.dayContainer--subheader{
+    font-size: 30;
+    color: #333;
+    font-weight: 100;
+}
+.dayContainer--imgweather{
+    height: 130px;
+}

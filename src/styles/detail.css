@@ -1,0 +1,10 @@
+.detail{
+  margin-top:150px;
+}
+.detail--container{
+  font-size: 34px;
+  font-weight: 100px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}

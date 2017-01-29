@@ -1,0 +1,27 @@
+body{
+  background-image: url('../../public/background.jpg');
+}
+.h2{
+  position: center;
+}
+.main--container{
+}
+.main--header{
+  position: fixed;
+  top: 0;
+  height: 110px;
+  width: 100%;
+  background: purple;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+.homeicon{
+  height: 100px;
+}
+.homelink{
+  position: fixed;
+  right: 3%;
+  top: 0%;
+
+}
