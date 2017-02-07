@@ -6,7 +6,9 @@
     margin: 35;
 }
 .dayContainer--subheader{
-    font-size: 30;
+    font-size: 34px;
+    font-style: italic;
+    text-decoration: underline;
     color: #333;
     font-weight: 100;
 }

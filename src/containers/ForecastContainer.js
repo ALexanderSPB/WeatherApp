@@ -35,7 +35,7 @@ class ForecastContainer extends Component{
   handleClick (weather) {
 
     this.context.router.push({
-      pathname: '/detail/' + this.props.routeParams.city,
+      pathname: '/detail/' + this.state.forecastData.city.name,
       state: {
         weather: weather
       }
