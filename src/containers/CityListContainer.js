@@ -7,8 +7,6 @@ const mapStatetoProps = (state) => ({
 })
 
 
-const CityListContainer = connect(
-  mapStatetoProps
-)(CityList)
+const CityListContainer = connect(mapStatetoProps)(CityList)
 
 export default CityListContainer;

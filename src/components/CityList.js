@@ -6,14 +6,14 @@ const CityList = ({ cityList }) => (
         { cityList.cityList.map((city) =>
           <CityListItem
             key={cityList.cityList.indexOf(city)}
-            {...city}
+            cityName={city.city.name}
           />
         )}
       </div>
 );
 CityList.PropTypes = {
   cityList: PropTypes.arrayOf(PropTypes.shape({
-    city: PropTypes.string.isRequired
+    cityName: PropTypes.object.isRequired
   }).isRequired).isRequired
 }
 

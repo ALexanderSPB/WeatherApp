@@ -19,7 +19,7 @@ function InputField (props) {
       className='form-control'
       style={{width: '200px', display: 'inline'}}
       onChange={props.onUpdateCity}
-      placeholder='Москва'
+      placeholder='Sankt-Peterburg'
       type='text'
       value={props.city} />
   )

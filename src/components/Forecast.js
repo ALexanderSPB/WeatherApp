@@ -5,7 +5,6 @@ import '../styles/forecast.css';
 var PropTypes = React.PropTypes;
 
 function ForecastUI (props) {
-
   return (
     <div className='forecast' style={{textAlign: 'center'}}>
       <h1 className='forecast--header'>{props.forecast.city.name}, {props.forecast.city.country}</h1>

@@ -1,16 +1,16 @@
 import React, { PropTypes } from 'react';
 import {Link} from 'react-router';
 
-const CityListItem= function CityListItem ( {city} ) {
+function CityListItem ( props ) {
   return(
-    <Link to={'/forecast/'+city} className='list-group-item list-group-item-success' style={{width: '30%'}}>
-      {city}
+    <Link to={'/forecast/'+props.cityName} className='list-group-item list-group-item-success' style={{width: '30%'}}>
+      {props.cityName}
     </Link>
   )
 }
 
 CityListItem.PropTypes = {
-  city: PropTypes.string.isRequired
+  cityName: PropTypes.string.isRequired
 }
 
 export default CityListItem;

@@ -1,0 +1,23 @@
+.historyContainer{
+  margin: 150px;
+}
+.HistoryItem{
+
+}
+.HistoryItem--header{
+  font-size: 39px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: monospace;
+}
+.HistoryItem--date{
+  font-style: italic;
+}
+.HistoryItem--imgweather{
+  margin-right: 10px;
+}
+.HistoryItem--details{
+  font-size: 18px;
+  margin-left: 40px;
+}

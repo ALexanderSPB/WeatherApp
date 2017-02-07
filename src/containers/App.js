@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <div className='menu'>
           <h1> Меню: </h1>
-          <Link to='History'><button className='btn btn-default'>История запросов</button></Link>
+          <Link to='History'><button className='btn'>История запросов</button></Link>
           <Link to='Statistics'><button className='btn btn-primary'>Статистика</button></Link>
         </div>
         <h1> Введите название города </h1>

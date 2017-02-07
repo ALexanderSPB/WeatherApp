@@ -1,13 +1,25 @@
-import React, {Component}  from 'react';
+import React  from 'react';
+import {connect} from 'react-redux';
+import '../styles/history.css';
+import HistoryItem from '../components/HistoryItem';
 
-class History extends Component{
-  render(){
+function History (props){
     return(
-      <div>
-        <h2> Прогноз погоды от "Open Weather" </h2>
+      <div className='historyContainer'>
+        {props.cityList.cityList.map((city) =>
+          <HistoryItem
+          key={props.cityList.cityList.indexOf(city)}
+          city={city}
+          />
+        )}
       </div>
     )
-  }
 }
 
-export default History;
+function mapStateToProps(state){
+  return(
+      {cityList: state.cityList}
+    )
+}
+
+export default connect(mapStateToProps)(History);

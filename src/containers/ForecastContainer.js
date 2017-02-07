@@ -25,11 +25,11 @@ class ForecastContainer extends Component{
   makeRequest (city) {
     getForcast(city)
       .then(function (forecastData) {
-        this.props.pageActions.addCity(this.props.routeParams.city);
         this.setState({
           isLoading: false,
           forecastData: forecastData
         });
+        this.props.pageActions.addCity(this.state.forecastData);
       }.bind(this));
   };
   handleClick (weather) {

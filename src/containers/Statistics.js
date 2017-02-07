@@ -1,13 +1,24 @@
-import React, {Component}  from 'react';
+import React from 'react';
+import {connect} from 'react-redux';
+import StatisticsItem from '../components/StatisticsItem';
 
-class Statistics extends Component{
-  render(){
+function Statistics (props){
     return(
-      <div>
-        <h2> Прогноз погоды от "Open Weather" </h2>
+      <div className='historyContainer'>
+        {props.cityList.cityList.map((city) =>
+          <StatisticsItem
+          key={props.cityList.cityList.indexOf(city)}
+          city={city}
+          />
+        )}
       </div>
     )
-  }
 }
 
-export default Statistics;
+function mapStateToProps(state){
+  return(
+      {cityList: state.cityList}
+    )
+}
+
+export default connect(mapStateToProps)(Statistics);
