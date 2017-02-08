@@ -23,7 +23,7 @@ function Forecast (props) {
     <div>
       {
         props.isLoading === true
-          ? <h1 className='forecast--subheader'> Loading </h1>
+          ? <h1 className='forecast--subheader forecast'> Loading </h1>
           : <ForecastUI
               city={props.forecastData.city.name}
               forecast={props.forecastData}
