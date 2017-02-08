@@ -16,6 +16,7 @@
 }
 .HistoryItem--imgweather{
   margin-right: 10px;
+  float: left;
 }
 .HistoryItem--details{
   font-size: 18px;
