@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CityList from '../components/CityList';
+import CityList from './CityList';
 
 
 const mapStatetoProps = (state) => ({

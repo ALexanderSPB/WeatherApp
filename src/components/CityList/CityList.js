@@ -1,16 +1,21 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import CityListItem from './CityListItem';
 
-const CityList = ({ cityList }) => (
+class CityList extends Component {
+  render(){
+    return(
       <div className='list-group'>
-        { cityList.cityList.map((city) =>
+        { this.props.cityList.cityList.map((city) =>
           <CityListItem
-            key={cityList.cityList.indexOf(city)}
+            key={this.props.cityList.cityList.indexOf(city)}
             cityName={city.city.name}
           />
         )}
       </div>
-);
+    )
+  }
+}
+
 CityList.PropTypes = {
   cityList: PropTypes.arrayOf(PropTypes.shape({
     cityName: PropTypes.object.isRequired

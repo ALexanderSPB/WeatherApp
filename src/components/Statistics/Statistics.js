@@ -1,19 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import StatisticsItem from '../components/StatisticsItem';
-import '../styles/statistics.css';
+import StatisticsItem from './StatisticsItem';
+import './statistics.css';
 
-function Statistics (props){
+class Statistics extends Component{
+  render(){
     return(
       <div className='StatisticsContainer'>
-        {props.cityList.cityList.map((city) =>
+        {this.props.cityList.cityList.map((city) =>
           <StatisticsItem
-          key={props.cityList.cityList.indexOf(city)}
+          key={this.props.cityList.cityList.indexOf(city)}
           city={city}
           />
         )}
       </div>
     )
+  }
 }
 
 function mapStateToProps(state){

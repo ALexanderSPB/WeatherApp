@@ -1,5 +1,5 @@
 import React, {Component}  from 'react';
-import Detail from '../components/Detail';
+import Detail from './Detail';
 
 class DetailContainer extends Component{
   render() {

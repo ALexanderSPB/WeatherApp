@@ -1,29 +1,23 @@
 import React, { Component }  from 'react';
 import { PropTypes }  from 'react';
-import utils from '../OpenWeather/utils';
-import '../styles/statistics.css';
+import utils from '../../OpenWeather/utils';
+import './statistics.css';
 var LineChart = require("react-chartjs").Line;
 
 var convertTemp = utils.convertTemp;
 var getDate = utils.getDate;
 
-
-var chartOptions= {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-}
-
 class StatisticsItem extends Component{
-  constructor(props,context){
-    super(props,context);
-    this.initChart = this.initChart.bind(this);
-  };
-  initChart(){
+  initChart = () =>{
+    var chartOptions= {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+    }
     var label = [];
     var temperature = [];
     this.props.city.list.map(function(date){
@@ -48,7 +42,7 @@ class StatisticsItem extends Component{
     return(
       <div className='StatisticsItem'>
         <h2 className='StatisticsItem--header'>{this.props.city.city.name}</h2>
-        <LineChart data={this.initChart()} options={chartOptions} width="900" height="350"/>
+        <LineChart data={this.initChart()} options={this.chartOptions} width="900" height="350"/>
       </div>
     )
   }

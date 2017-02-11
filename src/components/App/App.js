@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import InputContainer from './InputContainer';
 import {Link} from 'react-router';
-import CityListContainer from './CityListContainer';
-import '../styles/app.css';
+import CityListContainer from '../CityList/CityListContainer';
+import './app.css';
 
 class App extends Component {
   render() {

@@ -1,6 +1,13 @@
 button{
   margin: 10px;
 }
+.myform{
+  width: 200px;
+  display: inline;
+}
+.mybutton{
+  margin: 10px;
+}
 .App{
   margin-top: 150px;
   margin-left: 10%;

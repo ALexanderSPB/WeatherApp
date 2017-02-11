@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
-import Main from './containers/Main';
-import History from './containers/History';
-import Statistics from './containers/Statistics';
-import ForecastContainer from './containers/ForecastContainer';
-import DetailContainer from './containers/DetailContainer';
+import App from './components/App/App';
+import Main from './components/Main/Main';
+import History from './components/History/History';
+import Statistics from './components/Statistics/Statistics';
+import ForecastContainer from './components/Forecast/ForecastContainer';
+import DetailContainer from './components/DayContainer/DetailContainer';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Forecast from '../components/Forecast';
-import getForcast from '../OpenWeather/api';
+import Forecast from './Forecast';
+import getForcast from '../../OpenWeather/api';
 import { bindActionCreators } from 'redux';
-import * as pageActions from '../actions/addCity'
+import * as pageActions from '../../actions/addCity'
 import { connect } from 'react-redux';
 
 class ForecastContainer extends Component{
@@ -12,8 +12,6 @@ class ForecastContainer extends Component{
       isLoading: true,
       forecastData: {}
     };
-    this.makeRequest = this.makeRequest.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   };
 
   componentDidMount () {
@@ -32,8 +30,7 @@ class ForecastContainer extends Component{
         this.props.pageActions.addCity(this.state.forecastData);
       }.bind(this));
   };
-  handleClick (weather) {
-
+  handleClick = (weather) => {
     this.context.router.push({
       pathname: '/detail/' + this.state.forecastData.city.name,
       state: {

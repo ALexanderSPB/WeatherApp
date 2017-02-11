@@ -2,8 +2,8 @@ import React, {Component}  from 'react';
 import {Link} from 'react-router';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as pageActions from '../actions/addCity'
-import '../styles/main.css';
+import * as pageActions from '../../actions/addCity'
+import './main.css';
 
 class Main extends Component{
   render(){

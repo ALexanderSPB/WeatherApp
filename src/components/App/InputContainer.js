@@ -1,23 +1,18 @@
 import React, {Component} from 'react';
-import FindCity from '../components/FindCity';
-
-
+import FindCity from './FindCity';
 
 class InputContainer extends Component{
-
   constructor(props,context){
     super(props,context);
     this.state ={
       city:''
     };
-    this.handleSubmitCity = this.handleSubmitCity.bind(this);
-    this.handleUpdateCity = this.handleUpdateCity.bind(this);
   };
-  handleSubmitCity(e) {
+  handleSubmitCity = (e) => {
     this.context.router.push('/forecast/' + this.state.city)
   };
 
-  handleUpdateCity(e) {
+  handleUpdateCity = (e) => {
     this.setState({
       city: e.target.value
     })
